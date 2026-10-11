@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Doctors | Arogya Multispecialty Hospital</title>
+<meta name="description" content="Search specialist doctors, check OPD days and book.">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+<div class="notice-bar"><div class="wrap"><span><b>Emergency care is open 24 x 7</b> at Gate 2. No appointment needed.</span><span>OPD: Monday to Saturday, 9 AM to 5 PM</span></div></div>
+<header class="site"><div class="wrap bar">
+<a class="brand" href="index.html" aria-label="Arogya Multispecialty Hospital, home"><svg class="logo" viewBox="0 0 48 48" aria-hidden="true"><path d="M6 44V22a18 18 0 0 1 36 0v22z" fill="#0a3d3f"/><path d="M12 44V23a12 12 0 0 1 24 0v21z" fill="#16807a"/><path d="M21 17h6v6h6v6h-6v6h-6v-6h-6v-6h6z" fill="#fff"/><circle cx="39" cy="9" r="4" fill="#f2b544"/></svg><span class="brand-t">Arogya<small>Multispecialty Hospital</small></span></a>
+<button class="menu-btn" id="menuBtn" aria-expanded="false" aria-controls="mainNav">Menu</button>
+<nav class="main" id="mainNav" aria-label="Main"><ul><li><a href="index.html">Home</a></li><li><a href="about.html">About</a></li><li><a href="departments.html">Departments</a></li><li><a href="doctors.html" class="on" aria-current="page">Doctors</a></li><li><a href="services.html">Services</a></li><li><a href="packages.html">Health packages</a></li><li><a href="patients.html">Patient info</a></li><li><a href="tips.html">Health tips</a></li><li><a href="contact.html">Contact</a></li></ul></nav>
+</div></header>
+<main id="main">
+<section class="ph"><div class="wrap"><p class="crumbs"><a href="index.html">Home</a> / Doctors</p><h1>Our doctors</h1><p>Search by name or speciality, then check who is available today.</p></div></section>
+<section class="s" style="padding-top:44px"><div class="wrap">
+<div class="toolbar"><label class="vh" for="q">Search doctors</label><input id="q" type="search" placeholder="Search by name, speciality or degree">
+<label class="vh" for="sort">Sort</label><select id="sort"><option value="">Sort: default</option><option value="exp">Most experienced</option><option value="name">Name A to Z</option><option value="fee">Lowest fee</option></select>
+<label class="switch"><input type="checkbox" id="today"> Available today</label></div>
+<div class="chips" id="chips" role="group" aria-label="Filter by department"></div>
+<p class="count" id="count" aria-live="polite"></p>
+<div class="grid c3" id="docList"></div>
+<div class="empty" id="empty" hidden><p><b>No doctor matches these filters.</b></p><p style="margin:6px 0 14px">Try a different word or clear the filters.</p><button class="btn btn-o btn-s" id="reset" type="button">Clear filters</button></div>
+</div></section></main>
+<footer class="site"><div class="wrap">
+<div class="cols">
+<div><div class="brand" style="margin-bottom:14px"><svg class="logo" viewBox="0 0 48 48" aria-hidden="true"><path d="M6 44V22a18 18 0 0 1 36 0v22z" fill="#0a3d3f"/><path d="M12 44V23a12 12 0 0 1 24 0v21z" fill="#16807a"/><path d="M21 17h6v6h6v6h-6v6h-6v-6h-6v-6h6z" fill="#fff"/><circle cx="39" cy="9" r="4" fill="#f2b544"/></svg><span class="brand-t" style="color:#fff">Arogya</span></div><p>Specialist care, modern diagnostics and a 24-hour emergency room, built around clear communication.</p><p style="margin-top:12px;color:#f2b544">In a life-threatening emergency, go straight to the Emergency entrance at Gate 2.</p></div>
+<div><h4>Find care</h4><a href="appointment.html">Book appointment</a><a href="doctors.html">Our doctors</a><a href="departments.html">Departments</a><a href="packages.html">Health packages</a></div>
+<div><h4>Patients</h4><a href="patients.html">Visiting hours</a><a href="patients.html#faqs">Billing and insurance</a><a href="tips.html">Health tips</a><a href="services.html">Services</a></div>
+<div><h4>Hospital</h4><a href="about.html">About us</a><a href="contact.html">Find us</a><a href="contact.html#message">Send a message</a></div>
+</div>
+<div class="copy"><span>&copy; <span id="yr"></span> Arogya Multispecialty Hospital. Student PBL micro project (WAD, BE05000281).</span><span>All names, doctors and figures are fictional sample data.</span></div>
+</div></footer>
+<button id="toTop" aria-label="Back to top">&uarr;</button>
+<script src="js/icons.js"></script>
+<script src="js/data.js"></script>
+<script src="js/main.js"></script>
+<script src="js/doctors.js"></script>
+</body>
+</html>

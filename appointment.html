@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Book appointment | Arogya Multispecialty Hospital</title>
+<meta name="description" content="Book an OPD appointment at Arogya.">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+<div class="notice-bar"><div class="wrap"><span><b>Emergency care is open 24 x 7</b> at Gate 2. No appointment needed.</span><span>OPD: Monday to Saturday, 9 AM to 5 PM</span></div></div>
+<header class="site"><div class="wrap bar">
+<a class="brand" href="index.html" aria-label="Arogya Multispecialty Hospital, home"><svg class="logo" viewBox="0 0 48 48" aria-hidden="true"><path d="M6 44V22a18 18 0 0 1 36 0v22z" fill="#0a3d3f"/><path d="M12 44V23a12 12 0 0 1 24 0v21z" fill="#16807a"/><path d="M21 17h6v6h6v6h-6v6h-6v-6h-6v-6h6z" fill="#fff"/><circle cx="39" cy="9" r="4" fill="#f2b544"/></svg><span class="brand-t">Arogya<small>Multispecialty Hospital</small></span></a>
+<button class="menu-btn" id="menuBtn" aria-expanded="false" aria-controls="mainNav">Menu</button>
+<nav class="main" id="mainNav" aria-label="Main"><ul><li><a href="index.html">Home</a></li><li><a href="about.html">About</a></li><li><a href="departments.html">Departments</a></li><li><a href="doctors.html">Doctors</a></li><li><a href="services.html">Services</a></li><li><a href="packages.html">Health packages</a></li><li><a href="patients.html">Patient info</a></li><li><a href="tips.html">Health tips</a></li><li><a href="contact.html">Contact</a></li></ul></nav>
+</div></header>
+<main id="main">
+<section class="ph"><div class="wrap"><p class="crumbs"><a href="index.html">Home</a> / Appointment</p><h1>Book an appointment</h1><p>Four short steps. You will get a booking ID you can use to find or cancel your visit.</p></div></section>
+<section class="s" style="padding-top:36px"><div class="wrap" id="wizTop">
+<ol class="stepper" id="stepper"><li class="on"><span>Doctor</span></li><li><span>Date and time</span></li><li><span>Your details</span></li><li><span>Confirm</span></li></ol>
+<div class="wiz" id="wizard"><div>
+<div id="done" class="ok" hidden role="status"></div>
+<p class="notice" id="pkgNote" hidden style="background:var(--glass);padding:14px 18px;border-radius:14px;margin-bottom:16px"></p>
+<div class="panel" data-step="1"><h2>Choose a doctor</h2><p class="sub">Filter by department, then pick a doctor.</p>
+<div class="chips" id="deptChips" role="group" aria-label="Department"></div><div class="dpick" id="docPick"></div><div class="err" id="e1" style="color:#b3261e;margin-top:10px"></div>
+<div class="nav-b"><span></span><button class="btn btn-p" type="button" data-next>Continue</button></div></div>
+<div class="panel" data-step="2" hidden><h2>Pick a date and time</h2><p class="sub">The next 14 days are shown. Greyed dates are days the doctor is not in OPD.</p>
+<div class="dates" id="dates" role="group" aria-label="Date"></div><p class="sub" id="slotHelp" style="margin:6px 0 10px"></p><div class="slots" id="slots" role="group" aria-label="Time"></div><div id="e2" style="color:#b3261e;margin-top:10px"></div>
+<div class="nav-b"><button class="btn btn-o" type="button" data-back>Back</button><button class="btn btn-p" type="button" data-next>Continue</button></div></div>
+<div class="panel" data-step="3" hidden><h2>Patient details</h2><p class="sub">These details stay in your browser in this demo.</p>
+<div class="field"><label for="pn">Patient's full name</label><input id="pn" autocomplete="name"><div class="err" id="pnE"></div></div>
+<div class="r2"><div class="field"><label for="pa">Age</label><input id="pa" type="number" min="0" max="120"><div class="err" id="paE"></div></div>
+<div class="field"><label for="ps">Sex</label><select id="ps"><option value="">Select</option><option>Female</option><option>Male</option><option>Other</option></select><div class="err" id="psE"></div></div></div>
+<div class="field"><label for="pm">Mobile number</label><input id="pm" type="tel" inputmode="numeric" maxlength="10" autocomplete="tel"><div class="err" id="pmE"></div></div>
+<div class="field"><label for="pr">Reason for visit (optional)</label><textarea id="pr" rows="3" maxlength="300"></textarea></div>
+<div class="nav-b"><button class="btn btn-o" type="button" data-back>Back</button><button class="btn btn-p" type="button" data-next>Review</button></div></div>
+<div class="panel" data-step="4" hidden><h2>Review and confirm</h2><p class="sub">Check everything before you confirm.</p><div id="review"></div>
+<div class="nav-b"><button class="btn btn-o" type="button" data-back>Back</button><button class="btn btn-sun" type="button" id="confirm">Confirm appointment</button></div></div>
+</div>
+<aside class="stickyside"><div class="sum"><h3>Your booking</h3><dl id="sumList"></dl><p class="hint">Please arrive 15 minutes early and bring a photo ID and old reports.</p></div>
+<div class="lookup" style="margin-top:20px"><h3>Your bookings on this device</h3><label class="vh" for="lk">Search by booking ID</label><input id="lk" placeholder="Search by booking ID" style="width:100%;font:inherit;padding:10px 14px;border:1px solid #b9d0cb;border-radius:999px"><ul class="mybk" id="mine"></ul></div></aside>
+</div></div></section></main>
+<footer class="site"><div class="wrap">
+<div class="cols">
+<div><div class="brand" style="margin-bottom:14px"><svg class="logo" viewBox="0 0 48 48" aria-hidden="true"><path d="M6 44V22a18 18 0 0 1 36 0v22z" fill="#0a3d3f"/><path d="M12 44V23a12 12 0 0 1 24 0v21z" fill="#16807a"/><path d="M21 17h6v6h6v6h-6v6h-6v-6h-6v-6h6z" fill="#fff"/><circle cx="39" cy="9" r="4" fill="#f2b544"/></svg><span class="brand-t" style="color:#fff">Arogya</span></div><p>Specialist care, modern diagnostics and a 24-hour emergency room, built around clear communication.</p><p style="margin-top:12px;color:#f2b544">In a life-threatening emergency, go straight to the Emergency entrance at Gate 2.</p></div>
+<div><h4>Find care</h4><a href="appointment.html">Book appointment</a><a href="doctors.html">Our doctors</a><a href="departments.html">Departments</a><a href="packages.html">Health packages</a></div>
+<div><h4>Patients</h4><a href="patients.html">Visiting hours</a><a href="patients.html#faqs">Billing and insurance</a><a href="tips.html">Health tips</a><a href="services.html">Services</a></div>
+<div><h4>Hospital</h4><a href="about.html">About us</a><a href="contact.html">Find us</a><a href="contact.html#message">Send a message</a></div>
+</div>
+<div class="copy"><span>&copy; <span id="yr"></span> Arogya Multispecialty Hospital. Student PBL micro project (WAD, BE05000281).</span><span>All names, doctors and figures are fictional sample data.</span></div>
+</div></footer>
+<button id="toTop" aria-label="Back to top">&uarr;</button>
+<script src="js/icons.js"></script>
+<script src="js/data.js"></script>
+<script src="js/main.js"></script>
+<script src="js/appointment.js"></script>
+</body>
+</html>
